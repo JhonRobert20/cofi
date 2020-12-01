@@ -1,0 +1,27 @@
+{
+
+    "products":[
+            {
+                "code": "VOUCHER",
+                "name":"Cofi Voucher",
+                "price": 5,
+                "2x1_discount": "YES",
+                "bulk_discount": {"NO":[0]}
+            },
+            {
+                "code": "TSHIRT",
+                "name": "Cofi T-Shirt",
+                "price": 20,
+                "2x1_discount": "NO",
+                "bulk_discount": {"NO":[0]}
+            },
+            {
+                "code": "MUG",
+                "name": "Cofi Coffee Mug",
+                "price": 7.5,
+                "2x1_discount": "NO",
+                "bulk_discount":{"Yes":[1,3]}
+            }
+    
+        ]
+}
