@@ -45,7 +45,7 @@
             }
     
         ],
-        "Parameters":[
+        "parameters":[
             "code","name","price","2x1_discount","bulk_discount"
         ]
 }

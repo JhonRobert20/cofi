@@ -10,15 +10,19 @@ def load_data(route):#We need to load the file of json that we need
         products = json.load(content)
         return(products)
 def check_jason(products, parameters):#We have to check the data that send to us the json file
-    master_list = []
-    new_products = products
+    new_products = []
     print(parameters)
-    for in in range[0, 1, len(products)-1]:
-        lista=[]
+    for product in products:
+
+        j = 0
+        product_line = {}
         for e in product:
-            if product[e] != parameters[i]:
-                new_products[i][parameters[i]]= product[e]
-                del new_products[i][product]
+            product_line[parameters[j]]= product[e]
+            j = j + 1
+        new_products.append(product_line)
+    if new_products != products:
+        products = new_products
+
 
         
 
@@ -29,7 +33,8 @@ if __name__ == '__main__':
     file = load_data(route)
     #we only want prodcuts, so
     products = file['products']#products[0] #products[0]['bulk_discount']['NO']
-    check_jason(products)
+    parameters = file['parameters']
+    check_jason(products, parameters)
     codes = []
     for product in products:
         codes.append(product['code'])
@@ -190,6 +195,7 @@ if __name__ == '__main__':
     print(products_added)
     print(len(products_added))
     scan('MUG')
+    scan('MUGI')
     scan('VOUCHER')
     scan('TSHIRT')
     check_2x1()
