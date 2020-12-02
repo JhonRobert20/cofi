@@ -44,5 +44,8 @@
                 "budlk_discount":{"YES":[3,1]}
             }
     
+        ],
+        "Parameters":[
+            "code","name","price","2x1_discount","bulk_discount"
         ]
 }

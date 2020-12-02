@@ -5,33 +5,22 @@ problem = 0
 products_added=[]
 codes_added=[]
 
-def load_data(route):
+def load_data(route):#We need to load the file of json that we need
     with open(route) as content:
         products = json.load(content)
         return(products)
-def check_jason( products):
+def check_jason(products, parameters):#We have to check the data that send to us the json file
     master_list = []
-    for product in products:
+    new_products = products
+    print(parameters)
+    for in in range[0, 1, len(products)-1]:
         lista=[]
         for e in product:
-            lista.append(e)
-        master_list.append(lista)
-        num = len(product)
-    print("---------------------------------------"+str(num))
-    i = 0
-    parametros = [] 
-    while i <num:
-        parametros.append(input("¿Que parametros quieres poner en tu lista json?"))
-        i=i+1
-    j = []
-    for i in [0,1,len(master_list)-1]:
-        load = 0
-        list_re = master_list[i]
-        a= np.array(parametros)
-        b = np.array(list_re)
-        c = np.less_equal(a, b)
-        if False in c:
-            j.append(i)
+            if product[e] != parameters[i]:
+                new_products[i][parameters[i]]= product[e]
+                del new_products[i][product]
+
+        
 
 
 if __name__ == '__main__':
