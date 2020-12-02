@@ -9,21 +9,54 @@ def load_data(route='productos.json'):#We need to load the file of json that we 
     with open(route) as content:
         products = json.load(content)
         return(products)
-def check_json(products, parameters):#We have to check the data that send to us the json file
+def check_json(products, parameters, types):#We have to check the data that send to us the json file
     new_products = []
+    delete_product = False
+    quit_vector = []
     print(parameters)
+    i = 0
     for product in products:
 
         j = 0
         product_line = {}
         for e in product:
-            product_line[parameters[j]]= product[e]
-            j = j + 1
+            if type(product[e]) != type(types[j]):
+                try:
+                    #Primera linea de fallo
+                    if ( (type(product[e])==int) or (type(product[e])==float)) and ((type(product[e])==int) or (type(product[e])==float)):
+                        product_line[parameters[j]]= product[e]
+                        j = j + 1
+                    else:
+                        print("Fallo definitivo, cambia: "+str(product['code'])+" e: "+str(product[e])+" tipo: "+str(types[j]))
+                        product_line[parameters[j]]= product[e]
+                        quit_vector.append[i]
+                        j = j +1
+                        delete_product = True
+                except: 
+                    print("Fallo definitivo, cambia: "+str(product['code'])+" e: "+str(product[e])+" tipo: "+str(types[j]))
+                    quit_vector.append(i)
+                    product_line[parameters[j]]= product[e]
+                    j = j +1
+                    delete_product = True
+            else:
+                product_line[parameters[j]]= product[e]
+                j = j + 1
+        
         new_products.append(product_line)
+        i = i + 1 
+    
     if new_products != products:
         products = new_products
+        if delete_product == True:
+            for vector in quit_vector:
+                print("------------Product removed: "+str(products[vector]['code'])+" ----------------")
+                products.remove(products[vector])
+            return products
         return products
     else:
+        if delete_product == True:
+            for vector in quit_vector:
+                products.remove(products[vector])
         return products
 
     
@@ -32,7 +65,8 @@ file = load_data(route)
 #we only want prodcuts, so
 products_check = file['products']#products[0] #products[0]['bulk_discount']['NO']
 parameters = file['parameters']
-products = check_json(products_check, parameters)
+types = file['types']
+products = check_json(products_check, parameters, types)
 #print(products)
 codes = []
 for product in products:
@@ -61,7 +95,6 @@ def remove(code):
         code = code.upper()
         if code in codes_added:
             products_founded = [product for product in products if product['code']==code.upper()]
-            print("ya: "+str(code.upper()))
             codes_added.remove(code)
             products_added.remove(products_founded[0])
             print("Se quito de la lista de productos actuales a: "+str(code))
@@ -152,7 +185,7 @@ def check_bulk():
         if type(price)== float or type(price)==int:
             print("")
         else:
-            print("fallo aqui")
+            print("fallo aqui 189")
             codes_added.remove(code)
             break
         
@@ -234,8 +267,9 @@ remove('Voucher')
 print("No tiene sentido: "+str(codes_added))
 scan('MUGI')
 scan('MUGI')
-#scan('MdUrGI')
 scan('MdUrGI')
+scan('MdUrGI')
+remove('Voucher')
 remove('Voucher')
 total()
 scan('TSHIRT')
@@ -244,5 +278,4 @@ print(codes_added)
 
 print(codes)
 print(codes_added)
-
-#def check_promo(products_added):#no modificar el precio del producto directamente
+total()

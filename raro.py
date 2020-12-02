@@ -1,4 +1,7 @@
-hola = {"YES": 23}
-hola_1 = hola
-
-print(hola_1["yes".upper()])
+HOLA = {}
+print(type(HOLA))
+hola = [1,2,3]
+hola_123 = []
+for h in hola_123:
+    hola.remove(h)
+print (hola)

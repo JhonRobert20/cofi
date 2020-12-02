@@ -54,5 +54,6 @@
         ],
         "parameters":[
             "code","name","price","2x1_discount","bulk_discount"
-        ]
+        ],
+        "types":["S", "STRING", 22, "STRING",{}]
 }
