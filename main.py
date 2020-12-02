@@ -5,11 +5,11 @@ problem = 0
 products_added=[]
 codes_added=[]
 
-def load_data(route):#We need to load the file of json that we need
+def load_data(route='productos.json'):#We need to load the file of json that we need
     with open(route) as content:
         products = json.load(content)
         return(products)
-def check_jason(products, parameters):#We have to check the data that send to us the json file
+def check_json(products, parameters):#We have to check the data that send to us the json file
     new_products = []
     print(parameters)
     for product in products:
@@ -22,35 +22,53 @@ def check_jason(products, parameters):#We have to check the data that send to us
         new_products.append(product_line)
     if new_products != products:
         products = new_products
-
-
-        
-
+        return products
+    else:
+        return products
 
 if __name__ == '__main__':
     
     route = 'productos.json'
     file = load_data(route)
     #we only want prodcuts, so
-    products = file['products']#products[0] #products[0]['bulk_discount']['NO']
+    products_check = file['products']#products[0] #products[0]['bulk_discount']['NO']
     parameters = file['parameters']
-    check_jason(products, parameters)
+    products = check_json(products_check, parameters)
+    #print(products)
     codes = []
     for product in products:
         codes.append(product['code'])
     print(codes)
     print("----------------------------------------------------------------------------------")
     def scan(code):#Los 2 pueden devolver algo 
-        if code in codes:
-            products_founded = [product for product in products if product['code']==code.upper()]#Cogemos los que se llamen así
-            products_added.append(products_founded[0])#Take in account to make this for data base
-            print("producto añadido: "+str(products_founded[0]['code']))
-            if code not in codes_added:
-                codes_added.append(code)
-            else: 
-                print("No pasa nada")
-        else:
-            print("El producto no ha sido añadido")
+        try:
+            if code.upper() in codes:
+                products_founded = [product for product in products if product['code']==code.upper()]#Cogemos los que se llamen así
+                products_added.append(products_founded[0])#Take in account to make this for data base
+                print("producto añadido: "+str(products_founded[0]['code']))
+                if code not in codes_added:
+                    codes_added.append(code)
+                    return True
+                else: 
+                    print("El: "+str(code)+" ya esta añadido")
+                    return True
+        except:
+            print("El producto no ha sido añadido: "+str(code))
+            return False
+    def remove(code):
+        try:
+            if code.upper() in codes:
+                products_founded = [product for product in products if product['code']==code.upper()]
+                products_added.remove(products_founded[0])
+                print("Se quito de la lista de productos actuales a: "+str(code))
+                return True
+            else:
+                print("No se encuentra en la lista")
+                return False
+        except:
+            print("Error al eliminar: "+str(code))
+            return False
+                
 
     def check_2x1():#Solo con el que nos pida,x devuelve el precio que cuesta y el precio que hubiera costado, para impactar más al usuario
         check_pay = {}
@@ -75,9 +93,7 @@ if __name__ == '__main__':
                 else:
                     print(str(len(products_discounts))+" en descuento "+products_founded[0]['code']+" son: "+str(i)+" y cada uno vale: "+str(price))
                 #Podre eliminar esto numero 1
-                
-                #print("-------------- \n"+str(products_discounts)+"\n ------------------")
-                
+
                 try:
                     if discount == True and c >=1:
                         if (c_1==c)==True:
@@ -88,7 +104,7 @@ if __name__ == '__main__':
                             total_price_discount = price*(c + 1)
                             total_discount = total_price - total_price_discount
                         else:
-                            print("Esto no tendría que saltar nunca fallado")
+                            print("Esto no tendría que saltar nunca fallado lo dejo por si no he acertado")
                     else:
 
                         if ((c < 1)) or (discount==False):
@@ -134,7 +150,7 @@ if __name__ == '__main__':
             quantity = 0
             discount = 0
             for key in DIC:
-                if key =="YES":
+                if key.upper() =="YES":
                     products_discounts.append(product)
                     discount = True
                     quantity = DIC['YES'][0]
@@ -184,25 +200,24 @@ if __name__ == '__main__':
 
             
     print(codes_added)
-    scan("jol")
     scan('MUG')
+    scan("jol")
+    scan(20)
     scan('VOUCHER')
+    remove('Voucher')
     scan('MUGI')
+    print(codes_added)
+    scan('MdUrGI')
+    remove('Voucher')
     scan('TSHIRT')
     total()
-    check_2x1()
-    print(codes_added)
-    print(products_added)
-    print(len(products_added))
+    scan('MUG')
     scan('MUG')
     scan('MUGI')
     scan('VOUCHER')
     scan('TSHIRT')
-    check_2x1()
-    check_bulk()
     total()
     print(codes)
     print(codes_added)
-    print(products_added)
     
     #def check_promo(products_added):#no modificar el precio del producto directamente
