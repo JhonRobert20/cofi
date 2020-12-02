@@ -41,7 +41,7 @@
                 "name": "Cofi Coffee Mug",
                 "price": 7.5,
                 "dd2x1_discount": "NO",
-                "budlk_discount":{"YES":[3,1]}
+                "budlk_discount":{"YES":[2,1]}
             },
             {
                 "code": "URGI",
