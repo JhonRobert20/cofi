@@ -1,5 +1,4 @@
 import json
-import numpy as np
 
 problem = 0
 products_added=[]
@@ -9,29 +8,6 @@ def load_data(route):
     with open(route) as content:
         products = json.load(content)
         return(products)
-def check_jason( products):
-    master_list = []
-    for product in products:
-        lista=[]
-        for e in product:
-            lista.append(e)
-        master_list.append(lista)
-        num = len(product)
-    print("---------------------------------------"+str(num))
-    i = 0
-    parametros = [] 
-    while i <num:
-        parametros.append(input("¿Que parametros quieres poner en tu lista json?"))
-        i=i+1
-    j = []
-    for i in [0,1,len(master_list)-1]:
-        load = 0
-        list_re = master_list[i]
-        a= np.array(parametros)
-        b = np.array(list_re)
-        c = np.less_equal(a, b)
-        if False in c:
-            j.append(i)
 
 
 if __name__ == '__main__':
@@ -40,7 +16,7 @@ if __name__ == '__main__':
     file = load_data(route)
     #we only want prodcuts, so
     products = file['products']#products[0] #products[0]['bulk_discount']['NO']
-    check_jason(products)
+    print(str(products[0]['bulk_discount']['NO'][0])+"jddddddddddddddddd")
     codes = []
     for product in products:
         codes.append(product['code'])
@@ -87,10 +63,12 @@ if __name__ == '__main__':
                 try:
                     if discount == True and c >=1:
                         if (c_1==c)==True:
+                            print("Estas en el primero")
                             total_price_discount = c*price
                             total_discount = total_price - total_price_discount
                             
                         elif (c_1==c)==False:
+                            print("Estas en el segundo")
                             total_price_discount = price*(c + 1)
                             total_discount = total_price - total_price_discount
                         else:
@@ -98,26 +76,24 @@ if __name__ == '__main__':
                     else:
 
                         if ((c < 1)) or (discount==False):
+                            print("Estas en el tercero")
                             total_price = total_price
                             total_price_discount = total_price
                             total_discount = total_price_discount - total_price
                         else:
                             print("Este no tendría que dar ni de broma")
-                    #print("----El precio final es: "+str(total_price_discount)+ " el precio total: "+str(total_price)+" y el descuento total: "+str(total_discount)+"--------")
+                    print("----El precio final es: "+str(total_price_discount)+ " el precio total: "+str(total_price)+" y el descuento total: "+str(total_discount)+"--------")
+                    #return [total_price_discount,total_price, total_discount]
                     check_pay[code]=[total_price_discount,total_price, total_discount]
                 
                 except:
                     print("--------------------------------------ROTO-----------------------------------")
             except:
-                print("--------------------------------------")
                 products_added.remove(products_founded[0])
                 codes_added.remove(code)
-                codes.remove(code)
                 print(codes_added)
                 print(products_added)
-                print(codes)
                 problem = problem + 1 
-                print("--------------------------------------")
                 
             
         print(check_pay)
@@ -134,7 +110,7 @@ if __name__ == '__main__':
                 break
             product = products_founded[0]
             price = product['price']
-            
+            print(str(len(products_founded))+" es la long: "+product['code'])
             discount = False
             DIC = product["bulk_discount"]
             quantity = 0
@@ -160,40 +136,41 @@ if __name__ == '__main__':
         return check_pay
     
     def total():
-        try:
-            if problem >=1:
-                check_2x1()
-            total= 0
-            total_discount = 0
-            total_price_discount = 0
-            count_2x1 = check_2x1()
-            count_bulk = check_bulk()
-            for code in codes_added:
-                prices_bulk = count_bulk[code]
-                prices_2x1 = count_2x1[code]
-                if prices_2x1[0] <= prices_bulk[0]:
-                    total_price_discount = total_price_discount + count_2x1[code][0] 
-                else:
-                    total_price_discount = total_price_discount + count_bulk[code][0] 
-                if prices_2x1[1] <= prices_bulk[0]:
-                    total = total + count_2x1[code][1] 
-                else:
-                    total = total + count_bulk[code][1]
-                if prices_2x1[2] <= prices_bulk[2]:
-                    total_discount = total_discount + count_2x1[code][2]
-                else:
-                    total_discount = total_discount + count_bulk[code][2]
+        if problem >=1:
+            check_2x1()
+        total= 0
+        total_discount = 0
+        total_price_discount = 0
+        count_2x1 = check_2x1()
+        count_bulk = check_bulk()
+        for code in codes_added:
+            prices_bulk = count_bulk[code]
+            prices_2x1 = count_2x1[code]
+            if prices_2x1[0] <= prices_bulk[0]:
+                total_price_discount = total_price_discount + count_2x1[code][0] 
+            else:
+                total_price_discount = total_price_discount + count_bulk[code][0] 
+            if prices_2x1[1] <= prices_bulk[0]:
+                total = total + count_2x1[code][1] 
+            else:
+                total = total + count_bulk[code][1]
+            if prices_2x1[2] <= prices_bulk[2]:
+                total_discount = total_discount + count_2x1[code][2]
+            else:
+                total_discount = total_discount + count_bulk[code][2]
 
-            print("el total es: "+str(total_price_discount))
-        except:
-            print("se intento")
+        print("el total es: "+str(total_price_discount))
 
             
     print(codes_added)
     scan("jol")
     scan('MUG')
+    scan('MUG')
+    scan('MUG')
+    scan('VOUCHER')
     scan('VOUCHER')
     scan('MUGI')
+    scan('VOUCHER')
     scan('TSHIRT')
     total()
     check_2x1()
@@ -201,13 +178,15 @@ if __name__ == '__main__':
     print(products_added)
     print(len(products_added))
     scan('MUG')
+    scan('MUG')
     scan('VOUCHER')
+    scan('VOUCHER')
+    scan('TSHIRT')
+    scan('TSHIRT')
     scan('TSHIRT')
     check_2x1()
     check_bulk()
     total()
-    print(codes)
-    print(codes_added)
-    print(products_added)
+    
     
     #def check_promo(products_added):#no modificar el precio del producto directamente

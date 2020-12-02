@@ -23,11 +23,25 @@
                 "bulk_discount":{"YES":[3,1]}
             },
             {
+                "code": "MdUrGI",
+                "name": "Cofi Coffee Mug",
+                "price": 7.5,
+                "2x1_discount": "NO",
+                "bulk_discount":{"YES":[3,1]}
+            },
+            {
                 "code": "MUGI",
                 "name": "Cofi Coffee Mug",
                 "price": 7.5,
                 "dd2x1_discount": "NO",
                 "bulk_discount":{"YES":[3,1]}
+            },
+            {
+                "code": "MUrGI",
+                "name": "Cofi Coffee Mug",
+                "price": 7.5,
+                "dd2x1_discount": "NO",
+                "budlk_discount":{"YES":[3,1]}
             }
     
         ]
