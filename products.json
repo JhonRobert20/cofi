@@ -13,14 +13,14 @@
                 "name": "Cofi T-Shirt",
                 "price": 20,
                 "2x1_discount": "NO",
-                "bulk_discount": {"NO":[]}
+                "bulk_discount": {"YES":[3,1]}
             },
             {
                 "code": "MUG",
                 "name": "Cofi Coffee Mug",
                 "price": 7.5,
                 "2x1_discount": "NO",
-                "bulk_discount":{"YES":[3,1]}
+                "bulk_discount":{"NO":[0]}
             },
             {
                 "code": "CHANGE EXAMPLE 1",
