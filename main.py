@@ -1,4 +1,6 @@
 import json
+import os
+
 def main():
 
     products_added=[]
@@ -48,19 +50,23 @@ def main():
             
             new_products.append(product_line)
             i = i + 1 
-        
-        
+                
         if new_products != products:#Here the program check the requierements of the json file
             products = new_products
             if delete_product == True:  
                 for i in range(0, len(quit_vector)):
-                    print(products)
                     try:
-                        print("------------Product removed: "+str(products[vector]['code'])+" check your data file----------------")
-                        products.remove(products[vector])
-                        quit_vector.remove(vector)
+                        for vector in quit_vector:
+                            print(lines+"Product removed: "+str(products[vector]['code'])+" check your data file"+lines)
+                            products.remove(products[vector])
+                            quit_vector.remove(vector)
+                            try:
+                                for p in range(0,len(quit_vector)):
+                                    quit_vector[p] = quit_vector[p] -1
+                            except: 
+                                print(lines+"The data that can make the program faiulere had been removed")
                     except:
-                        print("nose")
+                        print("El vector es: "+str(quit_vector))
                     i = i + -1
                 
                 return products
@@ -79,8 +85,11 @@ def main():
     def scan(code):#Los 2 pueden devolver algo 
         try:
             code = code.upper()
+            if len(codes) > 0:
+                for i in range(0, len(codes)):
+                    codes[i] = codes[i].upper()
             if code in codes:
-                products_founded = [product for product in products if product['code']==code]#Cogemos los que se llamen así
+                products_founded = [product for product in products if product['code'].upper()==code]#Cogemos los que se llamen así
                 products_added.append(products_founded[0])#Take in account to make this for data base
                 print("Porduct added: "+str(products_founded[0]['code']))
                 if code not in codes_added:
@@ -99,8 +108,11 @@ def main():
     def remove(code):
         try:
             code = code.upper()
+            if len(codes) > 0:
+                for i in range(0, len(codes)):
+                    codes[i] = codes[i].upper()
             if code in codes_added:
-                products_founded = [product for product in products if product['code']==code.upper()]
+                products_founded = [product for product in products if product['code'].upper()==code]
                 codes_to_show.remove(code)
                 if codes_to_show.count(code) > 0:
                     pass
@@ -123,7 +135,7 @@ def main():
         check_pay = {}
         for code in codes_added:#codes_added
             try:
-                products_founded = [product for product in products_added if product['code']==code.upper()]
+                products_founded = [product for product in products_added if product['code'].upper()==code.upper()]
                 products_discounts = [product for product in products_founded if product['2x1_discount']=="YES"]
                 i = len(products_founded)
                 c_1, c = [i/2, i//2]
@@ -144,8 +156,7 @@ def main():
                         elif (c_1==c)==False:
                             total_price_discount = price*(c + 1)
                             total_discount = total_price - total_price_discount
-                        else:
-                            print("Esto no tendría que saltar nunca fallado lo dejo por si no he acertado")
+
                     else:
 
                         if ((c < 1)) or (discount==False):
@@ -157,9 +168,13 @@ def main():
                     check_pay[code]=[total_price_discount,total_price, total_discount]
                 
                 except:
-                    print("--------------------------------------ROTO-----------------------------------")
+                    print("-----------------------------------Failure in: "+str(code)+", removed from your products list: "+str(code))
+                    products_added.remove(products_founded[0])
+                    codes_added.remove(code)
+                    codes_to_show.remove(code)
+                    codes.remove(code)
             except:
-                print(str(codes_added)+"--------Failure in ------------------------------"+str(code))
+                print("-----------------------------------Failure in: "+str(code)+", removed from your products list: "+str(code))
                 products_added.remove(products_founded[0])
                 codes_added.remove(code)
                 codes.remove(code)
@@ -174,7 +189,7 @@ def main():
         for code in codes_added:
             products_discounts = []
             try:
-                products_founded = [product for product in products_added if product['code']==code.upper()]
+                products_founded = [product for product in products_added if product['code'].upper()==code.upper()]
             except: 
                 products_added.remove(products_founded[0])
                 break
@@ -252,7 +267,7 @@ def main():
         parameters = file['parameters']
     except:
         print(lines+"The file that you have is doesn't working properly, please chek it"+lines)
-        quit()
+        
     #we only want prodcuts, so
     types = file['types']
     products = check_json(products_check, parameters, types)
@@ -260,12 +275,15 @@ def main():
     codes = []
     for product in products:
         codes.append(product['code'])
-    print(codes)
-    print("-----------------------------------------------------------------------------------------------------------------------------")
-    print("--------------------------------------------------Welcome to the Cofi shop---------------------------------------------------")
+    print("codes are: "+str(codes))
+    print("                                                  __________________________")
+    print("                                                  |Welcome to the Cofi shop|")
 
+
+    
     run = True
     while run:
+        
         option = input("Please select your option: \n"+lines+super_mini_lines+"Add object(Add)"+lines+"\n"+lines+super_mini_lines+"Remove objet(Remove)"+lines+"\n"+lines+super_mini_lines+"Show total(Total)"+lines+"\n"+lines+super_mini_lines+"Exit(Exit)"+lines+"\n"+mini_lines)
         posibles = ["ADD","REMOVE","TOTAL", "EXIT"]
         try:

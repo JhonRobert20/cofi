@@ -9,6 +9,13 @@
                 "bulk_discount": {"NO":[]}
             },
             {
+                "code": "MuppGI",
+                "name": "Cofi Coffee Mug",
+                "price": "d",
+                "dd2x1_discount": "NO",
+                "bulk_discount":{"YES":[3,1]}
+            },
+            {
                 "code": "TSHIRT",
                 "name": "Cofi T-Shirt",
                 "price": 20,
@@ -23,14 +30,14 @@
                 "bulk_discount":{"YES":[3,1]}
             },
             {
-                "code": "MDURGI",
+                "code": "MDUrGI",
                 "name": "Cofi Coffee Mug",
                 "price": 7.5,
                 "2x1_discount": "NO",
                 "bulk_discount":{"YES":[3,1]}
             },
             {
-                "code": "MUGI",
+                "code": "MGI",
                 "name": "Cofi Coffee Mug",
                 "price": 7.5,
                 "dd2x1_discount": "NO",
@@ -45,6 +52,13 @@
             },
             {
                 "code": "URGI",
+                "named": "Cofi Coffee Mug",
+                "pricewr": "dd",
+                "dd2x1_discount": "NO",
+                "budlk_discount":{"YES":[3,1]}
+            },
+            {
+                "code": "URRoGI",
                 "named": "Cofi Coffee Mug",
                 "pricewr": "dd",
                 "dd2x1_discount": "NO",
