@@ -50,7 +50,7 @@ def main():
         delete_product = False
         quit_vector = []
 
-        write_ticket("The parameter for this transaction was: "+str(parameters))
+        write_ticket("The parameters to make this transaction are: "+str(parameters))
         i = 0
         for product in products:
 
@@ -92,19 +92,18 @@ def main():
                             products.remove(products[vector])
                             quit_vector.remove(vector)
                             try:
-                                for p in range(0,len(quit_vector)):
-                                    quit_vector[p] = quit_vector[p] -1
+                                quit_vector[-1] = quit_vector[-1] -1
                             except: 
-                                print(lines+"The data that can make the program fail had been removed")
+                                write_ticket("The data that can make the program fail had been removed")
+
                     except:
-                        pass
-                    #mirar si hace falta
-                
+                        pass           
                 return products
             return products
         else:
             if delete_product == True:
                 for vector in quit_vector:
+                    print("hi: "+str(vector))
                     products.remove(products[vector])
             return products
 
