@@ -1,344 +1,4 @@
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Removed: MUG
-Failure in: URGI, removed from your products list: URGI
-Removed: D, take in acount for future
--------------------------------------2020-12-03 13:48:47.262964------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Have been added: MGI you have 2 in your list
--------------------------------------2020-12-03 13:51:02.128739------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Total price: 7.5              Original price: 7.5              Total discount: 0.0
-MUG: 1
-Have been added: MUG you have 2 in your list
-Total price: 15.0              Original price: 15.0              Total discount: 0.0
-MUG: 2
-MUG: 2
--------------------------------------2020-12-03 13:58:22.653550------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Total price: 7.5              Original price: 7.5              Total discount: 0.0
-MUG: 1
-Have been added: MUG you have 2 in your list
-Total price: 15.0              Original price: 15.0              Total discount: 0.0
-MUG: 2
-Failure in: URGI, removed from your products list: URGI
-Total price: 15.0              Original price: 15.0              Total discount: 0.0
-MUG: 2
-Have been added: MUG you have 3 in your list
-Total price: 19.5              Original price: 22.5              Total discount: 3.0
-MUG: 3
--------------------------------------2020-12-03 14:01:09.618881------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Total price: 7.5              Original price: 7.5              Total discount: 0.0
-Have been added: MUG you have 2 in your list
-Have been added: MUG you have 3 in your list
-Total price: 19.5              Original price: 22.5              Total discount: 3.0
-MUG: 3
--------------------------------------2020-12-03 14:05:07.298105------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Have been added: MUG
-Total price: 7.5              Original price: 7.5              Total discount: 0.0
-Have been added: MUG you have 2 in your list
-Have been added: MUG you have 3 in your list
-Have been added: MGI
-Have been added: URGI
-Failure in: URGI, removed from your products list: URGI
-Total price: 27.0              Original price: 30.0              Total discount: 3.0
-MUG: 3
-MGI: 1
--------------------------------------2020-12-03 14:07:07.617124------------------------------------
-The file that you have is doesn't working properly, please chek it
--------------------------------------2020-12-03 14:10:50.587806------------------------------------
-The file that you have is doesn't working properly, please chek it
--------------------------------------2020-12-03 14:11:02.476226------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Have been added: VOUCHER
-Removed: D, take in acount for future
-Have been added: TSHIRT
-Have been added: TSHIRT you have 2 in your list
-Removed: TSHIRT
-Total price: 25              Original price: 25              Total discount: 0
-VOUCHER: 1
-TSHIRT: 1
--------------------------------------2020-12-03 14:12:02.564755------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Product can't be added: 23
-Product can't be added: 23D
-Have been added: MUG
-Have been added: URGI
-Have been added: MGI
-Have been added: MUG you have 2 in your list
-Have been added: VOUCHER
-Have been added: TSHIRT
-Have been added: MUG you have 3 in your list
-Have been added: MDURGI
-Have been added: MGI you have 2 in your list
-Have been added: URGI you have 2 in your list
-Failure in: URGI, removed from your products list: URGI
-Total price: 67.0              Original price: 70.0              Total discount: 3.0
-Removed: URGI, take in acount for future
-Removed: TOTAL, take in acount for future
-Total price: 67.0              Original price: 70.0              Total discount: 3.0
-Removed: MGI
-Total price: 59.5              Original price: 62.5              Total discount: 3.0
-MUG: 3
-MGI: 1
-VOUCHER: 1
-TSHIRT: 1
-MDURGI: 1
--------------------------------------2020-12-03 14:14:46.910593------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Have been added: URGI
-Failure in: URGI, removed from your products list: URGI
-Total price: 0              Original price: 0              Total discount: 0
-Product can't be added: URGI
-Have been added: MGI
-Total price: 7.5              Original price: 7.5              Total discount: 0.0
-MGI: 1
--------------------------------------2020-12-03 14:22:37.149461------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Have been added: MGI
-Have been added: URGI
-Failure in: URGI, removed from your products list: URGI
-Total price: 7.5              Original price: 7.5              Total discount: 0.0
-Removed: MGI
-Have been added: MUG
-Total price: 7.5              Original price: 7.5              Total discount: 0.0
-Have been added: MUG you have 2 in your list
-Have been added: MUG you have 3 in your list
-Total price: 19.5              Original price: 22.5              Total discount: 3.0
-Have been added: MGI
-Total price: 27.0              Original price: 30.0              Total discount: 3.0
-MUG: 3
-MGI: 1
--------------------------------------2020-12-03 14:25:17.247923------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Have been added: MGI
-Removed: MGI
--------------------------------------2020-12-03 14:28:26.751294------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Total price: 0              Original price: 0              Total discount: 0
-Total price: 0              Original price: 0              Total discount: 0
-Have been added: MUG
-MUG: 1
--------------------------------------2020-12-03 14:33:48.726279------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
--------------------------------------2020-12-03 14:35:20.340431------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Have been added: MGI
-Have been added: MGI you have 2 in your list
-Have been added: MGI you have 3 in your list
-Have been added: URGI
-Have been added: URGI you have 2 in your list
-Have been added: URGI you have 3 in your list
-Failure in: URGI, removed from your products list: URGI
-Total price: 19.5              Original price: 22.5              Total discount: 3.0
-Removed: URGI, take in acount for future
-Total price: 19.5              Original price: 22.5              Total discount: 3.0
-Removed: URGI, take in acount for future
-Total price: 19.5              Original price: 22.5              Total discount: 3.0
-Removed: REMOVE, take in acount for future
-MGI: 3
--------------------------------------2020-12-03 14:36:37.808085------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
-Have been added: URGI
-Removed: URGI
-Have been added: URGI
-Have been added: URGI you have 2 in your list
-Failure in: URGI, removed from your products list: URGI
-Total price: 0              Original price: 0              Total discount: 0
-Removed: URGI, take in acount for future
-Product can't be added: URGI
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
--------------------------------------2020-12-03 14:42:14.874401------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
--------------------------------------2020-12-03 14:43:22.585351------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
--------------------------------------2020-12-03 15:02:48.793947------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
-Product removed: MURGI check your data file
--------------------------------------2020-12-03 15:05:23.412826------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
-Product removed: MuppGI check your data file
-Product removed: URRoGI check your data file
--------------------------------------2020-12-03 15:08:51.449409------------------------------------
-The parameter for this transaction was: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
 Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
 Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
 Fail, change: URGI for: <class 'str'> required type: <class 'int'>
@@ -348,10 +8,11 @@ Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
 Product removed: MuppGI check your data file
 Product removed: URRoGI check your data file
 Product removed: URGI check your data file
-Have been added: MURGI
+The data that can make the program fail had been removed
+Have been added: MUG
 Total price: 7.5              Original price: 7.5              Total discount: 0.0
-MURGI: 1
--------------------------------------2020-12-03 15:09:30.329801------------------------------------
+MUG: 1
+-------------------------------------2020-12-03 16:14:06.110738------------------------------------
 The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
 Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
 Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
@@ -364,16 +25,295 @@ Product removed: URRoGI check your data file
 Product removed: URGI check your data file
 The data that can make the program fail had been removed
 Have been added: MGI
-Have been added: MURGI
-Have been added: MDURGI
-Have been added: MUG
-Have been added: TSHIRT
-Have been added: VOUCHER
-Total price: 55.0              Original price: 55.0              Total discount: 0.0
+Total price: 7.5              Original price: 7.5              Total discount: 0.0
 MGI: 1
-MURGI: 1
-MDURGI: 1
-MUG: 1
+-------------------------------------2020-12-03 16:15:03.204575------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+Product can't be added: VOUVHER
+Have been added: TSHIRT
+Have been added: MUG
+Product can't be added: MDUTGI
+Have been added: MGI
+Have been added: MURGI
+Removed: MURGI
+Product can't be added: VOUVHER
+Have been added: VOUCHER
+Total price: 40.0              Original price: 40.0              Total discount: 0.0
 TSHIRT: 1
+MUG: 1
+MGI: 1
 VOUCHER: 1
--------------------------------------2020-12-03 15:15:51.302995------------------------------------
+-------------------------------------2020-12-03 17:00:37.483416------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+-------------------------------------2020-12-03 17:02:01.343711------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+-------------------------------------2020-12-03 17:02:33.869465------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+-------------------------------------2020-12-03 17:02:50.126792------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+-------------------------------------2020-12-03 17:03:32.376341------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+-------------------------------------2020-12-03 17:03:59.077828------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+-------------------------------------2020-12-03 17:04:08.455939------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+-------------------------------------2020-12-03 17:04:18.646782------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+-------------------------------------2020-12-03 17:04:38.182419------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+-------------------------------------2020-12-03 17:04:58.670195------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+Have been added: MURGI
+Total price: 7.5               Original price: 7.5               Total discount: 0.0
+MURGI: 1
+-------------------------------------2020-12-03 17:10:37.491024------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+Have been added: MGI you have 1 in your list
+Have been added: TSHIRT you have 1 in your list
+Have been added: MUG you have 1 in your list
+Removed: F, take in acount for future
+Total price: 35.0               Original price: 35.0               Total discount: 0.0
+MGI: 1
+TSHIRT: 1
+MUG: 1
+-------------------------------------2020-12-03 17:29:02.199711------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+-------------------------------------2020-12-03 17:31:14.438467------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+Have been added: MDURGI you have 1 in your list
+MDURGI: 1
+-------------------------------------2020-12-03 17:32:00.187538------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+Have been added: MUG you have 1 in your list
+Removed: 23, take in acount for future
+Have been added: MUG you have 2 in your list
+Removed: ADD, take in acount for future
+Have been added: MDURGI you have 1 in your list
+Total price: 22.5               Original price: 22.5               Total discount: 0.0
+Have been added: MGI you have 1 in your list
+Have been added: MUG you have 3 in your list
+Total price: 34.5               Original price: 37.5               Total discount: 3.0
+MUG: 3
+MDURGI: 1
+MGI: 1
+-------------------------------------2020-12-03 17:41:43.842316------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+Have been added: MDURGI you have 1 in your list
+Not in the list: D, take in acount for future
+Total price: 7.5               Original price: 7.5               Total discount: 0.0
+Have been added: MDURGI you have 2 in your list
+Removed: MDURGI
+Have been added: MDURGI you have 2 in your list
+Total price: 15.0               Original price: 15.0               Total discount: 0.0
+Have been added: MDURGI you have 3 in your list
+Total price: 19.5               Original price: 22.5               Total discount: 3.0
+MDURGI: 3
+-------------------------------------2020-12-03 17:46:14.256243------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+Have been added: MUG you have 1 in your list
+MUG: 1
+-------------------------------------2020-12-03 18:08:13.383822------------------------------------
+The parameters to make this transaction are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: MuppGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Fail, change: URRoGI for: <class 'str'> required type: <class 'int'>
+Product removed: MuppGI check your data file
+Product removed: URRoGI check your data file
+Product removed: URGI check your data file
+The data that can make the program fail had been removed
+Have been added: MGI you have 1 in your list
+Have been added: MUG you have 1 in your list
+Product can't be added: VOUVHER
+Have been added: VOUCHER you have 1 in your list
+Have been added: TSHIRT you have 1 in your list
+Have been added: MUG you have 2 in your list
+Have been added: MDURGI you have 1 in your list
+Have been added: MGI you have 2 in your list
+Have been added: MURGI you have 1 in your list
+Total price: 70.0               Original price: 70.0               Total discount: 0.0
+Have been added: MUG you have 3 in your list
+Total price: 74.5               Original price: 77.5               Total discount: 3.0
+Removed: MUG
+Removed: MUG
+Removed: MUG
+Not in the list: MUG, take in acount for future
+Removed: MURGI
+Removed: MGI
+Removed: MGI
+Removed: MDURGI
+Removed: TSHIRT
+Removed: VOUCHER
+-------------------------------------2020-12-03 19:13:41.072832------------------------------------
