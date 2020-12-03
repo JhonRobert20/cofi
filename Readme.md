@@ -1,9 +1,11 @@
 # Cofi Code Challenge, Jhon Robert
 
 # Instalación
-import json
-import os
-from datetime import datetime
+
+ - import json 
+ - import os
+ - from datetime import datetime
+
 Estas han sido las únicas librerias utilizadas.
 El programa se ha hecho con Python3.
  # Instrucciones para su uso
@@ -60,25 +62,30 @@ Con lo anteriormente citado, el programa es capaz de eliminar un producto inadec
 
 Se define los siguientes parámetros:
 
-> 2x1_discount: Elegir únicamente ("YES" o  "No"), si escribes "yes", cada 2 productos, 1 es gratuito.
-> bulk_discount: Se muestra el siguiente ejemplo:
-> {"YES":[3,1]}  "Se realiza el descuento por bulto (bulk discount) si compras 3 o más productos con el mismo código, el descuento es de 1 euro por cada uno.
-> "bulk_discount":  {"NO":[]} No se realiza descuento por bulto
+> 
+
+ - 2x1_discount: Elegir únicamente ("YES" o  "No"), si escribes "yes",
+   cada 2 productos, 1 es gratuito.
+ - bulk_discount: Se muestra el siguiente ejemplo:
+ - {"YES":[3,1]}  "Se realiza el descuento por bulto (bulk discount) si
+   compras 3 o más productos con el mismo código, el descuento es de     1 euro por cada uno.
+ - "bulk_discount":  {"NO":[]} No se realiza descuento por bulto
 
 Se muestra un ejemplo del antiguo y nuevo producto: 
-> Nuevo:
-> {
-> "code":  "VOUCHER",
-> "name":"Cofi Voucher",
-> "price":  5,
-> "2x1_discount":  "YES",
-> "bulk_discount":  {"NO":[]}
-> }
+ - Nuevo:
+ - {
+ - "code":  "VOUCHER",
+ - "name":"Cofi Voucher",
+ - "price":  5,
+ - "2x1_discount":  "YES",
+ - "bulk_discount":  {"NO":[]}
+ - }
+
 Antiguo:
-> {
-> "code":  "VOUCHER",
-> "name":"Cofi Voucher",
-> "price":  5,
-> }
+ - {
+ - "code":  "VOUCHER",
+ - "name":"Cofi Voucher",
+ - "price":  5,
+ - }
 
 Si el producto no pasa los chequeos correspondientes, se escribirá en el archivo **Json_Changes**, el cual se crea la primera vez que utilizas el programa.
