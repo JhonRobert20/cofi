@@ -33,12 +33,12 @@ El nuevo programa, es capaz de eliminar productos, permitir añadir y modificar 
 
 Por favor, echad un vistazo a la nueva interfaz:
 
->|Welcome to the Cofi shop|
-> Please select your option:
->  Add object(Add)
->  Remove objet(Remove)
-> Show total(Total)
-> Exit(Exit)
+ - |Welcome to the Cofi shop|
+ - Please select your option:
+ - Add object(Add)
+ - Remove objet(Remove)
+ - Show total(Total)
+ - Exit(Exit)
 
 Mediante esta nueva interfaz, el usuario tiene un mayor control de la tienda además, de una mejor experiencia.
 Las funciones añadidas para que el programa funcione son las siguientes:
