@@ -1,3 +1,3 @@
-line ="-----"
-line = line*("")
-print(line)
+from datetime import datetime
+now = datetime.now()
+print(now)

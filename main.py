@@ -1,5 +1,8 @@
 import json
 import os
+from datetime import datetime
+
+
 
 def main():
 
@@ -9,7 +12,34 @@ def main():
     lines = "                                                  "
     mini_lines ="             "
     super_mini_lines="    "
-    
+    now = datetime.now()
+
+    def write_ticket(line, show=True):
+        file_name="Json_Changes"
+        extention = ".txt"
+        name = file_name + extention
+        try:
+            file = open(name,"r")
+            lines = file.readlines()
+            file.close()
+            file_w = open(name, "a")
+            if len(lines) == 1:
+                file_w.writeline(line+"\n")
+                
+            else:
+                file_w.write(line+"\n")
+            
+            file_w.close()
+        
+        except:
+                file_a = open(name, "a")
+                file_a.write(line+"\n")
+                file_a.close()
+        finally:
+            if show == True:
+                    print("Added to "+ file_name+": "+line)
+            else: 
+                pass 
 
     def load_data(route='productos.json'):#We need to load the file of json that we need
         with open(route) as content:
@@ -19,7 +49,8 @@ def main():
         new_products = []
         delete_product = False
         quit_vector = []
-        print(parameters)
+
+        write_ticket("The parameter for this transaction was: "+str(parameters))
         i = 0
         for product in products:
 
@@ -33,13 +64,13 @@ def main():
                             product_line[parameters[j]]= product[e]
                             j = j + 1
                         else:
-                            print("Fail, change: "+str(product['code'])+" for: "+str(type(product[e]))+" required type: "+str(type(types[j])))
+                            write_ticket("Fail, change: "+str(product['code'])+" for: "+str(type(product[e]))+" required type: "+str(type(types[j])))
                             product_line[parameters[j]]= product[e]
                             quit_vector.append[i]
                             j = j +1
                             delete_product = True
                     except: 
-                        print("Fail, change: "+str(product['code'])+" for: "+str(type(product[e]))+" required type: "+str(type(types[j])))
+                        write_ticket("Fail, change: "+str(product['code'])+" for: "+str(type(product[e]))+" required type: "+str(type(types[j])))
                         quit_vector.append(i)
                         product_line[parameters[j]]= product[e]
                         j = j +1
@@ -57,17 +88,17 @@ def main():
                 for i in range(0, len(quit_vector)):
                     try:
                         for vector in quit_vector:
-                            print(lines+"Product removed: "+str(products[vector]['code'])+" check your data file"+lines)
+                            write_ticket("Product removed: "+str(products[vector]['code'])+" check your data file")
                             products.remove(products[vector])
                             quit_vector.remove(vector)
                             try:
                                 for p in range(0,len(quit_vector)):
                                     quit_vector[p] = quit_vector[p] -1
                             except: 
-                                print(lines+"The data that can make the program faiulere had been removed")
+                                print(lines+"The data that can make the program fail had been removed")
                     except:
-                        print("El vector es: "+str(quit_vector))
-                    i = i + -1
+                        pass
+                    #mirar si hace falta
                 
                 return products
             return products
@@ -78,10 +109,6 @@ def main():
             return products
 
     
-        
-    
-    
-
     def scan(code):#Los 2 pueden devolver algo 
         try:
             code = code.upper()
@@ -95,16 +122,21 @@ def main():
                 if code not in codes_added:
                     codes_added.append(code)
                     codes_to_show.append(code)
+                    write_ticket("Have been added: "+str(code), False)
+                    print("Have been added: "+str(code))
                     return True
                 else: 
                     codes_to_show.append(code)
+                    write_ticket("Have been added: "+str(code)+" you have "+str(codes_to_show.count(code))+" in your list", False)
                     print("Have been added: "+str(code)+" you have "+str(codes_to_show.count(code))+" in your list")
                     return True
             else:
+                write_ticket("Product can't be added: "+str(code), False)
                 print("Product can't be added: "+str(code))
         except:
             print("Porduct can't be added: "+str(code))
             return False
+
     def remove(code):
         try:
             code = code.upper()
@@ -118,15 +150,16 @@ def main():
                     pass
                 else:
                     codes_added.remove(code)
-                    
+                write_ticket("Removed: "+code, False)   
                 print("Removed: "+code)
                 products_added.remove(products_founded[0])
                 return True
             else:
-                print("Not in the list: "+code)
+                write_ticket("Removed: "+code+", take in acount for future", False)
+                print(mini_lines+"Not in the list: "+code)
                 return False
         except:
-            print("Can't delete: "+str(code))
+            print(mini_lines+"Can't delete: "+str(code))
             print(codes_to_show)
             return False
                 
@@ -164,22 +197,23 @@ def main():
                             total_price_discount = total_price
                             total_discount = total_price_discount - total_price
                         else:
-                            print("Este no tendría que dar ni de broma")
+                            pass
                     check_pay[code]=[total_price_discount,total_price, total_discount]
                 
                 except:
-                    print("-----------------------------------Failure in: "+str(code)+", removed from your products list: "+str(code))
+                    write_ticket("Failure in: "+str(code)+", removed from your products list: "+str(code), False)
+                    print("-----------------------------------Failure in: "+str(code)+", removed from your products list: "+str(code)+"-----------------------------------")
                     products_added.remove(products_founded[0])
                     codes_added.remove(code)
                     codes_to_show.remove(code)
                     codes.remove(code)
             except:
-                print("-----------------------------------Failure in: "+str(code)+", removed from your products list: "+str(code))
+                write_ticket("Failure in: "+str(code)+", removed from your products list: "+str(code), False)
+                print("-----------------------------------Failure in: "+str(code)+", removed from your products list: "+str(code)+"-----------------------------------")
                 products_added.remove(products_founded[0])
                 codes_added.remove(code)
+                codes_to_show.remove(code)
                 codes.remove(code)
-
-                print("--------------------------------------")
                 
             
         return (check_pay)
@@ -196,7 +230,7 @@ def main():
             product = products_founded[0]
             price = product['price']
             if type(price)== float or type(price)==int:
-                print("")
+                pass
             else:
                 print("Failere in: "+str(code))
                 codes_added.remove(code)
@@ -248,7 +282,7 @@ def main():
                     total = total + count_bulk[code][1]
 
                 total_discount = total - total_price_discount
-
+            write_ticket("Total price: "+str(total_price_discount)+mini_lines+" Original price: "+str(total)+mini_lines+" Total discount: "+str(total_discount), False)
             print("Total price: "+str(total_price_discount)+mini_lines+" Original price: "+str(total)+mini_lines+" Total discount: "+str(total_discount))
             return[total_price_discount,total, total_discount]
         except Exception as  ex:
@@ -266,7 +300,10 @@ def main():
         products_check = file['products']
         parameters = file['parameters']
     except:
-        print(lines+"The file that you have is doesn't working properly, please chek it"+lines)
+        print(mini_lines+"The file that you have is doesn't working properly, please chek it, exit mode activaded"+lines)
+        write_ticket("The file that you have is doesn't working properly, please chek it", False)
+        write_ticket("-------------------------------------"+str(now)+"------------------------------------")
+        quit()
         
     #we only want prodcuts, so
     types = file['types']
@@ -300,18 +337,30 @@ def main():
                 elif option=="REMOVE":
                     if (len(codes_to_show)) > 0:
 
-                        print(super_mini_lines+"Remove a product from this list "+str(codes_to_show))
-                        del_product = remove(input("¿Wich one do you want to be removed? "))
+                        print("Remove a product from this list "+str(codes_to_show))
+                        del_product = remove(input(mini_lines+"¿Wich one do you want to be removed? "))
                     else:
-                        print(mini_lines+"You can't choose this option, you don't have anything on your list")
+                        print("You can't choose this option, you don't have anything on your list")
                     #if del_product == True
                 elif option == "TOTAL":
-                    show_total = total()
+                    if (len(codes_to_show)) > 0:
+                        show_total = total()
+                        for codes_price in codes_added:
+                            print(codes_price+": "+str(codes_to_show.count(codes_price))+"   ")
+
+                    else:
+                        print("You can't choose this option, you don't have anything on your list")
+                    
+
                 elif option == "EXIT":
                     print(mini_lines+"Thanks for buying in our store, we hope you've had a good experince. See you neext time ")
+                    if len(codes_to_show) > 0:
+                        for codes_price in codes_added:
+                            write_ticket(codes_price+": "+str(codes_to_show.count(codes_price)), False)
+                    write_ticket("-------------------------------------"+str(now)+"------------------------------------")
                     break
             else:
-                print(lines+"Please select a available options"+lines)
+                print(str(option)+" doesn't valid, please select a available options")
         except Exception as e:
             print("Excepcion: "+str(e))
 
