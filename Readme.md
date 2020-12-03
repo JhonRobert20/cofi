@@ -13,6 +13,7 @@ El programa se ha hecho con Python3.
  - main.py
  - products.json
  - README.md
+
 El siguiente paso es ejecutar el archivo main.py (funcionará en la terminal).
 El programa sigue las indicaciones dadas inicialmente. Sin embargo, si deseas enterarte con más detalle de su funcionamiento, te recomiendo que leas los comentarios explicados en dicho programa, además de los siguientes apartados:
 
