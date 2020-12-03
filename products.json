@@ -9,13 +9,6 @@
                 "bulk_discount": {"NO":[]}
             },
             {
-                "code": "MuppGI",
-                "name": "Cofi Coffee Mug",
-                "price": "d",
-                "dd2x1_discount": "NO",
-                "bulk_discount":{"YES":[3,1]}
-            },
-            {
                 "code": "TSHIRT",
                 "name": "Cofi T-Shirt",
                 "price": 20,
@@ -30,36 +23,43 @@
                 "bulk_discount":{"YES":[3,1]}
             },
             {
-                "code": "MDUrGI",
-                "name": "Cofi Coffee Mug",
+                "code": "CHANGE EXAMPLE 1",
+                "name": "Cofi Change Example",
                 "price": 7.5,
-                "2x1_discount": "NO",
+                "2x1_discounert": "NO",
                 "bulk_discount":{"YES":[3,1]}
             },
             {
-                "code": "MGI",
-                "name": "Cofi Coffee Mug",
+                "code": "CHANGE EXAMPLE 2",
+                "name": "Cofi Change Example",
                 "price": 7.5,
                 "dd2x1_discount": "NO",
                 "bulk_discount":{"YES":[3,1]}
             },
             {
-                "code": "MURGI",
-                "name": "Cofi Coffee Mug",
+                "code": "CHANGE EXAMPLE 3",
+                "name": "Cofi Change Example",
                 "price": 7.5,
                 "dd2x1_discount": "NO",
                 "budlk_discount":{"YES":[2,1]}
             },
             {
-                "code": "URGI",
-                "named": "Cofi Coffee Mug",
+                "code": "DELETE EXAMPLE 1",
+                "name": "Cofi Delete Example",
+                "price": "d",
+                "dd2x1_discount": "NO",
+                "bulk_discount":{"YES":[3,1]}
+            },
+            {
+                "code": "DELETE EXAMPLE 2",
+                "named": "Cofi Delete Example",
                 "pricewr": "dd",
                 "dd2x1_discount": "NO",
                 "budlk_discount":{"YES":[3,1]}
             },
             {
-                "code": "URRoGI",
-                "named": "Cofi Coffee Mug",
+                "code": "DELETE EXAMPLE 3",
+                "named": "Cofi Delete Example",
                 "pricewr": "dd",
                 "dd2x1_discount": "NO",
                 "budlk_discount":{"YES":[3,1]}

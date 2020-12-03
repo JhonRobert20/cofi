@@ -1,0 +1,63 @@
+The parameters to make this operation are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: DELETE EXAMPLE 1 for: <class 'str'> required type: <class 'int'>
+Fail, change: DELETE EXAMPLE 1 for: <class 'str'> required type: <class 'int'>
+Fail, change: DELETE EXAMPLE 2 for: <class 'str'> required type: <class 'int'>
+Fail, change: DELETE EXAMPLE 2 for: <class 'str'> required type: <class 'int'>
+Fail, change: DELETE EXAMPLE 3 for: <class 'str'> required type: <class 'int'>
+Fail, change: DELETE EXAMPLE 3 for: <class 'str'> required type: <class 'int'>
+Product removed: DELETE EXAMPLE 1 check your data file
+Product removed: DELETE EXAMPLE 3 check your data file
+Product removed: DELETE EXAMPLE 2 check your data file
+The data that could make the program to fail has been removed
+Have been added: MUG you have 1 in your list
+Have been added: VOUCHER you have 1 in your list
+Have been added: TSHIRT you have 1 in your list
+Product can't be added: CHAGE EXAMPLE 1
+Have been added: CHANGE EXAMPLE 1 you have 1 in your list
+Have been added: CHANGE EXAMPLE 2 you have 1 in your list
+Have been added: CHANGE EXAMPLE 3 you have 1 in your list
+Removed: MUG
+Total price: 47.5               Original price: 47.5               Total discount: 0.0
+Have been added: MUG you have 1 in your list
+Have been added: MUG you have 2 in your list
+Have been added: MUG you have 3 in your list
+Have been added: MUG you have 4 in your list
+Total price: 73.5               Original price: 77.5               Total discount: 4.0
+Product can't be added: TOTAL
+Total price: 73.5               Original price: 77.5               Total discount: 4.0
+Removed: VOUCHER
+Removed: TSHIRT
+Removed: CHANGE EXAMPLE 1
+Removed: CHANGE EXAMPLE 2
+Removed: CHANGE EXAMPLE 3
+Removed: MUG
+It is not in the list: TOTAL, take into acount for the future
+Removed: MUG
+Total price: 15.0               Original price: 15.0               Total discount: 0.0
+Removed: MUG
+Removed: MUG
+Have been added: VOUCHER you have 1 in your list
+Have been added: TSHIRT you have 1 in your list
+Have been added: MUG you have 1 in your list
+Total price: 32.5               Original price: 32.5               Total discount: 0.0
+VOUCHER: 1
+TSHIRT: 1
+MUG: 1
+-------------------------------------2020-12-03 21:56:34.556500------------------------------------
+The parameters to make this operation are: ['code', 'name', 'price', '2x1_discount', 'bulk_discount']
+Fail, change: DELETE EXAMPLE 1 for: <class 'str'> required type: <class 'int'>
+Fail, change: DELETE EXAMPLE 1 for: <class 'str'> required type: <class 'int'>
+Fail, change: DELETE EXAMPLE 2 for: <class 'str'> required type: <class 'int'>
+Fail, change: DELETE EXAMPLE 2 for: <class 'str'> required type: <class 'int'>
+Fail, change: DELETE EXAMPLE 3 for: <class 'str'> required type: <class 'int'>
+Fail, change: DELETE EXAMPLE 3 for: <class 'str'> required type: <class 'int'>
+Product removed: DELETE EXAMPLE 1 check your data file
+Product removed: DELETE EXAMPLE 3 check your data file
+Product removed: DELETE EXAMPLE 2 check your data file
+The data that could make the program to fail has been removed
+Have been added: MUG you have 1 in your list
+Total price: 7.5               Original price: 7.5               Total discount: 0.0
+Have been added: MUG you have 2 in your list
+Total price: 15.0               Original price: 15.0               Total discount: 0.0
+MUG: 2
+-------------------------------------2020-12-03 22:02:06.545574------------------------------------
